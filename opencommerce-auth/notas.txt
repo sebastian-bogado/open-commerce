@@ -1,0 +1,1 @@
+Este comando sirve para apuntar al servidor de logueo: curl -XPOST "web_app:@localhost:9090/oauth/token" -d "grant_type=password&username=sebastian.bogado@ducode.io&password=password"
