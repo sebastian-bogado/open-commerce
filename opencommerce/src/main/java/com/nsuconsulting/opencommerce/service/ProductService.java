@@ -11,5 +11,9 @@ public interface ProductService {
 	List<Product> findNonActiveProducts();
 	Optional<Product> findLightProductById(Long id);
 	Optional<Product> findProductById(Long id);
+	Product createProduct(Product product);
+	Product updateProduct(Product product);
+	void deleteProduct(Long id);
+	void deleteProduct(String product);
 
 }
