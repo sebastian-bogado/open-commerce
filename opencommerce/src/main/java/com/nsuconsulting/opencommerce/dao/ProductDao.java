@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface ProductDao extends LogicalDeleteableBeanDao<Product> {
 
-	List<Product> findAllByQuantityLessThanEqualAndActiveIsTrue(Double quantity);
+	List<Product> findProductsByIdInAndActiveIsTrue(List<Long> ids);
 	Optional<Product> findProductByCode(String code);
 
 }

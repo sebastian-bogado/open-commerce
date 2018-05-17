@@ -28,9 +28,6 @@ public class Product extends LogicalDeleteableBean {
 	@NotNull
 	@Min(0)
 	private BigDecimal price;
-	@NotNull
-	@Min(0)
-	private Double quantity;
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Picture> pictureList;
 

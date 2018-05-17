@@ -25,6 +25,11 @@ public class ProductServiceImpl extends AbstractLogicalDeleteableService<Product
 	}
 
 	@Override
+	public List<Product> findProductsByIds(List<Long> ids) {
+		return productDao.findProductsByIdInAndActiveIsTrue(ids);
+	}
+
+	@Override
 	public List<Product> findNonActiveProducts() {
 		return productDao.findAllByActiveIsFalse();
 	}
@@ -62,7 +67,6 @@ public class ProductServiceImpl extends AbstractLogicalDeleteableService<Product
 		persistedProduct.setDescription(product.getDescription());
 		persistedProduct.setName(product.getName());
 		persistedProduct.setPrice(product.getPrice());
-		persistedProduct.setQuantity(persistedProduct.getQuantity());
 		return productDao.save(prepareToUpdate(product));
 	}
 
@@ -86,6 +90,11 @@ public class ProductServiceImpl extends AbstractLogicalDeleteableService<Product
 	@Override
 	public void deleteProduct(String uuid) {
 		productDao.deleteByUuid(uuid);
+	}
+
+	@Override
+	public List<Product> updateStockProducts(List<Product> products) {
+		return productDao.saveAll(products);
 	}
 
 
