@@ -41,12 +41,12 @@ public class PurchaseServiceImpl extends AbstractBaseBeanService<Purchase> imple
 	public Purchase createPurchase(Purchase purchase) {
 		List<Stock> failedProducts = stockService.verifyStock(purchase
 				.getPurchaseLines().stream().map(element -> new VerifyStockVO(element.getProduct().getId(), element.getQuantity()))
-				.collect(Collectors.toList()));
+				.collect(Collectors.toList()), 1L);
 		if(!failedProducts.isEmpty()) {
 			throw new CanCreatePurchaseException(failedProducts.stream().map(Stock::getProduct).collect(Collectors.toList()));
 		}
 		stockService.updateStocks(purchase.getPurchaseLines().stream().map(element -> new VerifyStockVO(element.getProduct().getId(), element.getQuantity()))
-				.collect(Collectors.toList()));
+				.collect(Collectors.toList()),1L);
 		return purchaseDao.save(prepareToCreate(purchase));
 	}
 

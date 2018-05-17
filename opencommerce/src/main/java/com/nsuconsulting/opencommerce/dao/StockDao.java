@@ -10,6 +10,7 @@ import java.util.Optional;
 @Repository
 public interface StockDao extends JpaRepository<Stock, Long> {
 	List<Stock> findStocksByLocation_Id(Long idLocation);
+	List<Stock> findStocksByLocation_IdAndProduct_IdIs(Long locationId, List<Long> ids);
 	Optional<Stock> findStockByProduct_IdAndQuantityGreaterThanAndLocation_Id(Long productId, Double quantity, Long locationId);
 	List<Stock> findStocksByProduct_Id(Long productId);
 	Optional<Stock> findStockByProduct_IdAndLocation_Id(Long idProduct, Long idLocation);
