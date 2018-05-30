@@ -8,5 +8,6 @@ import java.util.Optional;
 
 @NoRepositoryBean
 public interface BaseBeanDao<T extends BaseBean> extends TimestampBeanDao<T>, JpaRepository<T, Long> {
-	Optional<T> findByIdAndActiveIsTrue(Long id);
+	Optional<T> findById(Long id);
+	void deleteByUuid(String uuid);
 }
