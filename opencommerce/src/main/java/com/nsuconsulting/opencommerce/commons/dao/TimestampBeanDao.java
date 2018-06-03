@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.dao;
+package com.nsuconsulting.opencommerce.commons.dao;
 
-import com.nsuconsulting.opencommerce.utils.model.TimestampBean;
+import com.nsuconsulting.opencommerce.commons.model.TimestampBean;
 import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean

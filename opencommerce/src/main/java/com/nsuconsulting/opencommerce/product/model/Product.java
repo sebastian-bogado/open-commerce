@@ -1,26 +1,21 @@
 package com.nsuconsulting.opencommerce.product.model;
 
-import com.nsuconsulting.opencommerce.utils.model.LogicalDeleteableBean;
+import com.nsuconsulting.opencommerce.commons.model.LogicalDeleteableBean;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Entity //Esto indica que va a ser una tabla en la base de datos.
-@Data //Esto indica que tiene que generar getters, setters, toString, equals y hashcode
+@Entity
+@Data
 public class Product extends LogicalDeleteableBean {
 
-	/*@Id //Significa que el atributo que esta anotado, va a ser un id
-	@GeneratedValue //Significa que el atributo que esta anotado va a ser un valor autogenerado
-	private Long id;*/
-	@NotNull //El campo este no puede ser nulo
-	@NotEmpty // El campo este no puede estar vacio
+	@NotNull
+	@NotEmpty
 	private String code;
 	@NotNull
 	@NotEmpty
@@ -29,7 +24,9 @@ public class Product extends LogicalDeleteableBean {
 	@NotNull
 	@Min(0)
 	private BigDecimal price;
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToOne(cascade = CascadeType.DETACH)
+	private Picture defaultPicture;
+	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Picture> pictureList;
 
 }

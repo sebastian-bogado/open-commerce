@@ -1,4 +1,4 @@
-package com.nsuconsulting.opencommerce.utils.model;
+package com.nsuconsulting.opencommerce.commons.model;
 
 import lombok.Data;
 

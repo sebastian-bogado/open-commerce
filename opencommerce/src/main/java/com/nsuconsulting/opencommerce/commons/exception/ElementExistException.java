@@ -1,4 +1,4 @@
-package com.nsuconsulting.opencommerce.utils.exception;
+package com.nsuconsulting.opencommerce.commons.exception;
 
 import org.springframework.http.HttpStatus;
 

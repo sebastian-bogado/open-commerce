@@ -1,6 +1,6 @@
 package com.nsuconsulting.opencommerce.branchoffice.model;
 
-import com.nsuconsulting.opencommerce.utils.model.LogicalDeleteableBean;
+import com.nsuconsulting.opencommerce.commons.model.LogicalDeleteableBean;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;

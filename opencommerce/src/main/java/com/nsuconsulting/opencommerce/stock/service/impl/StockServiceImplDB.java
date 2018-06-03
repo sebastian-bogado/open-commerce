@@ -4,7 +4,7 @@ import com.nsuconsulting.opencommerce.stock.dao.StockDao;
 import com.nsuconsulting.opencommerce.stock.exception.StockNotFoundException;
 import com.nsuconsulting.opencommerce.stock.model.Stock;
 import com.nsuconsulting.opencommerce.stock.service.StockService;
-import com.nsuconsulting.opencommerce.utils.service.AbstractBaseBeanService;
+import com.nsuconsulting.opencommerce.commons.service.AbstractBaseBeanService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

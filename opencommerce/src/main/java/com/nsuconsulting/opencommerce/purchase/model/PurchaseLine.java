@@ -1,6 +1,6 @@
 package com.nsuconsulting.opencommerce.purchase.model;
 
-import com.nsuconsulting.opencommerce.utils.model.BaseBean;
+import com.nsuconsulting.opencommerce.commons.model.BaseBean;
 import lombok.Data;
 
 import javax.persistence.Entity;

@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.service;
+package com.nsuconsulting.opencommerce.commons.service;
 
-import com.nsuconsulting.opencommerce.utils.model.LogicalDeleteableBean;
+import com.nsuconsulting.opencommerce.commons.model.LogicalDeleteableBean;
 
 public class AbstractLogicalDeleteableBeanService<T extends LogicalDeleteableBean> extends AbstractBaseBeanService<T> {
 	@Override

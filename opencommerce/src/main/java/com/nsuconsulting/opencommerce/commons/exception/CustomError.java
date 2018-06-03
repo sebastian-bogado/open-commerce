@@ -1,4 +1,4 @@
-package com.nsuconsulting.opencommerce.utils.exception;
+package com.nsuconsulting.opencommerce.commons.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

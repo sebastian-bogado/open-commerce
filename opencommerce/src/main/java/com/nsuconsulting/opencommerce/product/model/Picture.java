@@ -1,20 +1,27 @@
 package com.nsuconsulting.opencommerce.product.model;
 
-import com.nsuconsulting.opencommerce.utils.model.BaseBean;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Entity
 @Data
-public class Picture extends BaseBean {
+@NoArgsConstructor
+public class Picture {
+	@Id
+	@GeneratedValue
+	private Long id;
 	@NotNull
 	@NotEmpty
 	private String path;
-	@ManyToOne(fetch = FetchType.LAZY) //Muchas instancias de esta clase, van a estar ligadas con solo una instancia del atributo.
+	@ManyToOne(fetch = FetchType.LAZY)
 	private Product product;
+
+	public Picture(String picture) {
+		this.path = picture;
+	}
+
 }

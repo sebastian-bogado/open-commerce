@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.service;
+package com.nsuconsulting.opencommerce.commons.service;
 
-import com.nsuconsulting.opencommerce.utils.model.TimestampBean;
+import com.nsuconsulting.opencommerce.commons.model.TimestampBean;
 
 import java.time.LocalDateTime;
 

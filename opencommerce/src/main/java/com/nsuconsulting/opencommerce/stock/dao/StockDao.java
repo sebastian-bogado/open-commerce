@@ -1,7 +1,7 @@
 package com.nsuconsulting.opencommerce.stock.dao;
 
 import com.nsuconsulting.opencommerce.stock.model.Stock;
-import com.nsuconsulting.opencommerce.utils.dao.BaseBeanDao;
+import com.nsuconsulting.opencommerce.commons.dao.BaseBeanDao;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

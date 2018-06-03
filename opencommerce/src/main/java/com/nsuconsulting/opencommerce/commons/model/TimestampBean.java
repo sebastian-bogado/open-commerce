@@ -1,10 +1,9 @@
-package com.nsuconsulting.opencommerce.utils.model;
+package com.nsuconsulting.opencommerce.commons.model;
 
 import lombok.Data;
 
 import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @MappedSuperclass
 @Data

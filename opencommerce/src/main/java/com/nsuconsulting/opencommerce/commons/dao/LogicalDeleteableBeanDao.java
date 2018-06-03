@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.dao;
+package com.nsuconsulting.opencommerce.commons.dao;
 
-import com.nsuconsulting.opencommerce.utils.model.LogicalDeleteableBean;
+import com.nsuconsulting.opencommerce.commons.model.LogicalDeleteableBean;
 import org.springframework.data.repository.NoRepositoryBean;
 
 import java.util.List;

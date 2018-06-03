@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.service;
+package com.nsuconsulting.opencommerce.commons.service;
 
-import com.nsuconsulting.opencommerce.utils.model.BaseBean;
+import com.nsuconsulting.opencommerce.commons.model.BaseBean;
 
 import java.util.UUID;
 

@@ -1,6 +1,6 @@
-package com.nsuconsulting.opencommerce.utils.dao;
+package com.nsuconsulting.opencommerce.commons.dao;
 
-import com.nsuconsulting.opencommerce.utils.model.BaseBean;
+import com.nsuconsulting.opencommerce.commons.model.BaseBean;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

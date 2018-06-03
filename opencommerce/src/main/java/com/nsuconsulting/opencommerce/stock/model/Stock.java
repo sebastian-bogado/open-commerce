@@ -1,7 +1,7 @@
 package com.nsuconsulting.opencommerce.stock.model;
 
 import com.nsuconsulting.opencommerce.stock.exception.ImposibleToUpdateStock;
-import com.nsuconsulting.opencommerce.utils.model.BaseBean;
+import com.nsuconsulting.opencommerce.commons.model.BaseBean;
 import lombok.Data;
 
 import javax.persistence.Entity;

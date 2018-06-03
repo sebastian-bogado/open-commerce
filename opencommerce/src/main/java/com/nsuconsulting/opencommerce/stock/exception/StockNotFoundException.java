@@ -1,6 +1,6 @@
 package com.nsuconsulting.opencommerce.stock.exception;
 
-import com.nsuconsulting.opencommerce.utils.exception.NotFoundException;
+import com.nsuconsulting.opencommerce.commons.exception.NotFoundException;
 
 public class StockNotFoundException extends NotFoundException {
 	public StockNotFoundException() {

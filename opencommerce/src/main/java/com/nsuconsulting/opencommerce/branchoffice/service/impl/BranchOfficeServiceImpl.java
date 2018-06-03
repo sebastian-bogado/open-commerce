@@ -3,7 +3,7 @@ package com.nsuconsulting.opencommerce.branchoffice.service.impl;
 import com.nsuconsulting.opencommerce.branchoffice.dao.BranchOfficeDao;
 import com.nsuconsulting.opencommerce.branchoffice.model.BranchOffice;
 import com.nsuconsulting.opencommerce.branchoffice.service.BranchOfficeService;
-import com.nsuconsulting.opencommerce.utils.service.AbstractLogicalDeleteableBeanService;
+import com.nsuconsulting.opencommerce.commons.service.AbstractLogicalDeleteableBeanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
